@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<style type="text/css" title="AppleStyle">
+		@import "WHMCS%20Time%20Tracker.css";
+	</style>
+	<script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleAnimator.js" charset="utf-8"></script>
+	<script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleButton.js" charset="utf-8"></script>
+	<script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleInfoButton.js" charset="utf-8"></script>
+	<script type="text/javascript" src="localizedStrings.js" charset="utf-8"></script>
+	<script type="text/javascript" src="Parts/utilities.js" charset="utf-8"></script>
+	<script type="text/javascript" src="Parts/setup.js" charset="utf-8"></script>
+	<script type="text/javascript" src="Parts/Text.js" charset="utf-8"></script>
+	<script type="text/javascript" src="Parts/InfoButton.js" charset="utf-8"></script>
+	<script type="text/javascript" src="Parts/GlassButton.js" charset="utf-8"></script>
+	<script type="text/javascript" src="jquery-1.2.2.js" charset="utf-8"></script>
+	<script type="text/javascript" src="utilities.js" charset="utf-8"></script>
+	<script type="text/javascript" src="json2.js" charset="utf-8"></script>
+	<script type="text/javascript" src="webtoolkit.md5.js" charset="utf-8"></script>
+	<script type="text/javascript" src="WHMCS%20Time%20Tracker.js" charset="utf-8"></script>
+
+	<style type="text/css" title="AppleStyle">@import "WHMCS Time Tracker.css";</style>
+</head>
+<body onload="load();">
+	<div id="front">
+		<img id="frontImg" src="Images/front.png" alt="">
+		
+	<img src="Images/clockbacking%203.png" id="img2">
+	<div id="info"></div>
+		
+	
+	
+	<div id="startbutton"></div>
+	<div id="stopbutton"></div>
+   
+	<div id="front_input"> 
+		<select id="Clients">
+			<option value="-1">Clients</option>
+ 		</select>
+		<br />
+		<input type="text" id="Rate" placeholder="Rate" /> per hour
+	</div>
+	
+	<div id="submithours"></div>
+	<textarea id="Notes" onkeypress="enterToSubmitHours(event)"></textarea>
+	<div apple-text-overflow="ellipsis" id="not"></div>
+	
+	
+	<div apple-text-overflow="clip" id="count" onclick="editClockedTime(event)" style="cursor:pointer;"></div>
+	
+	<img src="Images/clock.png" id="Clock" ondblclick="addTimeStampToNotes(event)">
+
+	<div apple-text-overflow="ellipsis" id="submitStatus"></div>
+
+	
+	
+	<input type="text" name="" value="0:00:00" id="updatedTime" onblur="updateClockedTime(event)" onkeypress="validateClockedKey(event)" onchange="validateUpdatedTime(event)" apple-text-overflow="clip">
+	<div apple-text-overflow="ellipsis" id="url" onclick="headToMyWHMCS(event)" style="cursor:pointer;"></div>
+	<img src="Images/divider.png" id="img1">
+	<img src="Images/divider.png" id="img3">
+	</div>
+	<!-- =============================================== -->
+	<div id="back">
+	   <img id="backImg" src="Images/back.png" alt="">
+		
+		<div id="done"></div>
+	<input type="text" name="" value="" id="username" onkeypress="loginKeypress(event)">
+	<input type="password" name="" value="" id="password" onkeypress="loginKeypress(event)">
+	<input type="text" name="" value="" id="whmcsurl" onkeypress="loginKeypress(event)">
+	<div apple-text-overflow="ellipsis" id="uname"></div>
+	<div apple-text-overflow="ellipsis" id="pw"></div>
+	<div apple-text-overflow="ellipsis" id="lblwhmcsurl"></div>
+	
+	
+	<div apple-text-overflow="ellipsis" id="statusmsg"></div>
+	<div apple-text-overflow="ellipsis" id="versionInfo"></div>
+	
+	<img src="Images/whmcslogo.png" id="logo" style="cursor:pointer;" alt="Head to WHMCS!" onclick="headToWHMCS(event)">
+	<img src="Images/NetByte%20Design%20Studio%20-%200083.png" id="hourglass">
+	<img src="Images/icoback.png" id="img4">
+	
+	
+	</div>
+
+
+
+</body>
+</html>

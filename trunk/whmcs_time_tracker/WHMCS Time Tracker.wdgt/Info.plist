@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AllowNetworkAccess</key>
+	<true/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDisplayName</key>
+	<string>WHMCS Time Tracker</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.franksworld.widget.WHMCSTimeTracker</string>
+	<key>CFBundleName</key>
+	<string>WHMCS Time Tracker</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0.0</string>
+	<key>CloseBoxInsetX</key>
+	<integer>5</integer>
+	<key>CloseBoxInsetY</key>
+	<integer>10</integer>
+	<key>Height</key>
+	<integer>265</integer>
+	<key>MainHTML</key>
+	<string>WHMCS Time Tracker.html</string>
+	<key>Width</key>
+	<integer>329</integer>
+</dict>
+</plist>
